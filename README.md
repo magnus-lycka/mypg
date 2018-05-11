@@ -6,6 +6,19 @@ docker. Use docker volume to create a docker volume which can
 be reused with other docker images if needed.
 
 
+TLDR
+----
+
+    git clone https://github.com/magnus-lycka/mypg.git
+    cd mypg
+    docker volume create pg96data
+    docker-compose up -d
+
+Have fun...
+
+    docker-compose down
+
+
 Create docker volume for PostgreSQL 
 -----------------------------------
 
