@@ -11,7 +11,7 @@ Create docker volume for Postgresql
 
 You only need to do this once on the machine.
 
-$ docker volume create pg96data
+`$ docker volume create pg96data`
 
 
 The docker images
@@ -49,8 +49,8 @@ Starting and stopping the system
 Stand in the directory with the docker-cmopose.yml config file, and run
 
 
-$ docker-compose up -d
+`$ docker-compose up -d`
 
 or
 
-$ docker-compose down
+`$ docker-compose down`
