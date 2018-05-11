@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+    pg96:
+        image: postgres:9.6
+        volumes:
+            - pg96data:/var/lib/postgresql/data
+        ports:
+            - 5432:5432
+        environment:
+            POSTGRES_PASSWORD: s3cr3t
+    pgadmin4:
+        image: dpage/pgadmin4
+        ports:
+            - 80:80
+        environment:
+            PGADMIN_DEFAULT_EMAIL: postgres@localhost
+            PGADMIN_DEFAULT_PASSWORD: s3cr3t
+
+volumes:
+    pg96data:
+        external: true
