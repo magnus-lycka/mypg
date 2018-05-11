@@ -14,7 +14,7 @@ TLDR
     docker volume create pg96data
     docker-compose up -d
 
-Have fun...
+Go to http://localhost/ and have fun...
 
     docker-compose down
 
