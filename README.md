@@ -6,8 +6,8 @@ docker. Use docker volume to create a docker volume which can
 be reused with other docker images if needed.
 
 
-TLDR
-----
+tl;dr
+-----
 
     git clone https://github.com/magnus-lycka/mypg.git
     cd mypg
@@ -24,7 +24,7 @@ Create docker volume for PostgreSQL
 
 You only need to do this once on the machine.
 
-`$ docker volume create pg96data`
+    docker volume create pg96data
 
 
 The docker images
@@ -57,11 +57,11 @@ Starting and stopping the system
 Stand in the directory with the `docker-cmopose.yml` config file, and run
 
 
-`$ docker-compose up -d`
+    docker-compose up -d
 
 or
 
-`$ docker-compose down`
+    docker-compose down
 
 
 Using PgAdmin4
@@ -73,8 +73,10 @@ you should go to http://localhost:8080/
 
  * Click on `Add New Server`.
  * In the `General` tab, you need to supply a name for the server to use as a label in PgAdmin4. 
- * In the `Connection` tab, you need to supply the hostname, which should be the same as the service name in `docker-compose.yml`, i.e. `pg96`.  The pre-filled username should be correct (`postgres`) unless you changed either either login in the config, but you need to supply the `POSTGRES_PASSWORD`.
+ * In the `Connection` tab, you need to supply the hostname, which should be the same as the service name in `docker-compose.yml`, i.e. `pg96`.  The pre-filled username should be correct (`postgres`) unless you changed either login in the config, but you need to supply the `POSTGRES_PASSWORD`.
  * Save!
 
-The server should now by visible in the tree structure to the left.
+The server should now by available in the tree structure to the left.
+
+Have Fun!
 
